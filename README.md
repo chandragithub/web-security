@@ -13,7 +13,8 @@
       @version: 0.0.2 (beta)
  
 ## Description: 
-   It prevents cross site scripting (xss) attacts across the browser.
+   It prevents cross site scripting (xss) attack across the browsers.
+   
 ### what is a cross site scripting attack (xss)?
    Cross-site scripting (XSS) is a code injection attack that allows an attacker to execute malicious JavaScript in another user's browser
 
