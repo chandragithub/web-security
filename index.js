@@ -6,7 +6,7 @@
  *
  * @author ChandraShekher Polimera (linkedin: chandrashekherpolimera | email: chandrashekher@techie.com)
  * @date 13/08/2016
- * @version 0.0.1 (beta)
+ * @version 0.0.2 (beta)
  */
 
 var webSecurity = (function () 

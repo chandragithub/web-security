@@ -10,7 +10,7 @@
       @author: ChandraShekher Polimera (linkedin: chandrashekherpolimera | email: chandrashekher@techie.com)
       @github: https://github.com/chandragithub/xssescape
       @date: 13/08/2016
-      @version: 0.0.1 (beta)
+      @version: 0.0.2 (beta)
  
 ## Description: 
    It prevents cross site scripting (xss) attacts across the browser.
@@ -52,6 +52,7 @@
 
 
 ## Installation
+## NodeJs
 
 ```sh
 npm install web-security
@@ -62,8 +63,15 @@ npm install web-security
 ```js
 var xs = require('web-security')
 ```
+## Browser
+
+```js
+   <script type="text/javascript" src="web-security.js"> </script>
+```
+
 
 ## Usage.
+
 ### escape
 
 ```js
