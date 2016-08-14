@@ -67,6 +67,9 @@ var xs = require('web-security')
 
 ```js
    <script type="text/javascript" src="web-security.js"> </script>
+   <script>
+      var xs = webSecurity;
+   </script>
 ```
 
 
