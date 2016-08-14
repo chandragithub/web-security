@@ -54,13 +54,13 @@
 ## Installation
 
 ```sh
-npm install webSecurity
+npm install web-security
 ```
 
 ## API
 
 ```js
-var xs = require('webSecurity')
+var xs = require('web-security')
 ```
 
 ## Usage.
