@@ -8,8 +8,8 @@
 
       @contact: http://randomrise.com 
       @author: ChandraShekher Polimera (linkedin: chandrashekherpolimera | email: chandrashekher@techie.com)
-      @github: https://github.com/chandragithub/xssescape
-      @date: 13/08/2016
+      @github: https://github.com/chandragithub/web-security
+      @date: 14/08/2016
       @version: 0.0.2 (beta)
  
 ## Description: 
