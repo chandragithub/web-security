@@ -1,12 +1,13 @@
 /**
  *  Copyright © http://randomrise.com, as an published work.  All rights reserved.
- *  THIS SOFTWARE OR DATA IS THE PROPERTY OF http://randomrise.com.
- *  THIS SOFTWARE INTENTD TO PROVIDE OPEN SOURCE (FREE TO USE) BUT ANY REPRODUCTION NOT ALLOWED.
- *  CONTACT: http://randomrise.com
- *
- * @author ChandraShekher Polimera (linkedin: chandrashekherpolimera | email: chandrashekher@techie.com)
- * @date 13/08/2016
- * @version 0.0.2 (beta)
+ *  This software or data is the property of http://randomrise.com.
+ *  This software is intend to provide open source (FREE TO USE) but any reproduction is not allowed.
+ *  
+ *  @contact: http://randomrise.com
+ *  @author:  ChandraShekher Polimera (linkedin: chandrashekherpolimera | email: chandrashekher@techie.com)
+ *  @github:  https://github.com/chandragithub/web-security.git
+ *  @date:    13/08/2016
+ *  @version: 0.0.4 (beta)
  */
 
 var webSecurity = (function () 
@@ -135,9 +136,25 @@ var webSecurity = (function ()
         if(typeof window !== 'undefined')
         {
            var searchLocation =  location.search;
-           var unSafeChar = searchLocation.match(/[script]/g);
+           var unSafeChar = searchLocation.match(/[script|document|cookie]/g);
               
            ((unSafeChar !== null) ? (unSafeChar.length > 0 ? location.replace("/") : "") : "");
+             
+        }
+        else
+        {
+           throw "Node Doesn't Support safeUrl";
+        }
+    };
+    
+    webSecurity.safeUrlWithHash = function(hash)
+    {
+        if(typeof window !== 'undefined')
+        {
+           var searchLocation =  location.search;
+           var unSafeChar = searchLocation.match(/[script|document|cookie]/g);
+              
+           ((unSafeChar !== null) ? (unSafeChar.length > 0 ? location.replace(hash) : "") : "");
              
         }
         else
@@ -164,3 +181,4 @@ else
 {
     window.webSecurity = webSecurity;
 };
+

@@ -47,7 +47,7 @@
   "_spec": "web-security",
   "_where": "E:\\customNode_modules",
   "bugs": {
-    "url": "https://github.com/chandragithub/xssescape/issues"
+    "url": "https://github.com/chandragithub/web-security/issues"
   },
   "files": [
     "README.md",
@@ -71,7 +71,7 @@
     "shasum": "d8e35e2cf76e1df7f0f331f91d32057fab47562f",
     "tarball": "https://registry.npmjs.org/web-security/-/web-security-0.0.1.tgz"
   },
-  "homepage": "https://github.com/chandragithub/xssescape#readme",
+  "homepage": "https://github.com/chandragithub/web-security#readme",
   "maintainers": [
     {
       "name": "chandrashekherpolimera",
@@ -80,7 +80,7 @@
   ],
   "name": "web-security",
   "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
+  "readme": "For documents - visit my github",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chandragithub/web-security.git"
@@ -88,5 +88,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "0.0.2"
+  "version": "0.0.4"
 }

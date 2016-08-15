@@ -10,7 +10,7 @@
       @author: ChandraShekher Polimera (linkedin: chandrashekherpolimera | email: chandrashekher@techie.com)
       @github: https://github.com/chandragithub/web-security
       @date: 14/08/2016
-      @version: 0.0.2 (beta)
+      @version: 0.0.4 (beta)
  
 ## Description: 
    It prevents cross site scripting (xss) attack across the browsers.
@@ -50,6 +50,9 @@
     - safeUrl() {};
 
     - unSafeUrl() {};
+    
+    - @param: link after base url eg. /home
+      unSafeUrl(param) {};
 
 
 ## Installation
@@ -133,8 +136,8 @@ var xs = require('web-security')
 ### safeUrl
  
 ```js
-   var url = "http://randomrise.com/?<script> document.cookie </script>";
-   xs.safeUrl(url);
+   var browserURL = "http://randomrise.com/?<script> document.cookie </script>";
+   xs.safeUrl();
    
    // it will reload/refresh the page without search parameter.
 ```
@@ -142,8 +145,17 @@ var xs = require('web-security')
 ### unSafeUrl
  
 ```js
-   var url = "http://randomrise.com/?<script> document.cookie </script>";
-   xs.unSafeUrl(url);
+   var browserURL = "http://randomrise.com/?<script> document.cookie </script>";
+   xs.unSafeUrl();
    
    // it will reload/refresh the page  with search parameter.
+```
+
+### safeUrlWithHash
+
+```js
+   var browserURL = "http://randomrise.com/?<script> document.cookie </script>";
+   xs.unSafeUrl('/home');   // eg. you can keep what ever you want.
+    
+   // it will reload/refresh the page  with /home after the default url.
 ```
